@@ -5,25 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/headfoot.css" />
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="css/product.css" />
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
-    <style>
-      .card-img-top {
-          object-fit: cover;
-          height: 400px;
-          width: 100%;
-      }
-      .card {
-          display: flex;
-          flex-direction: column;
-          justify-content: space-between;
-          height: 100%;
-      }
-</style>
+   
+
   </head>
   <body>
     <nav class="navbar navbar-expand-md">
@@ -72,19 +61,26 @@
     </nav>
 
     <div class="container mt-5">
-        <h1 class="text-center mb-4">Our Products</h1>
+        <h1 class="heading text-center mb-4">Our Products</h1>
+        <hr size="5px" color="#e44d26" /> 
+        <div class="container-fluid spices-section" id="spicesSection">
+          <img src="spices-image.jpg" alt="Spices" class="spices-img">
+          <h1>We Provides You Premium Quality Products</h1>
+          <p>Woowin brings you premium-quality rice, aromatic spices, and pure cold-pressed organic oil, carefully sourced to ensure exceptional taste and health benefits. Elevate your meals with our natural, farm-fresh products!</p>
+      </div>
+       
         <div class="row">
           <!-- Product 1 -->
           <div class="col-md-4 mb-4">
             <div class="card text-center">
               <img
-                src="images/spices2.jpg"
+                src="images/spicespng.png"
                 class="card-img-top"
                 alt="Product Image"
               />
               <div class="card-body">
                 <h5 class="card-title">Spices</h5>
-                <a href="nextpage.html" class="btn btn-primary">Show details</a>
+                <a href="spices.html" class="btn btn-primary">Show details</a>
               </div>
             </div>
           </div>
@@ -93,13 +89,13 @@
           <div class="col-md-4 mb-4">
             <div class="card text-center">
               <img
-                src="images/rice.png"
+                src="images/riceproduct.png"
                 class="card-img-top"
                 alt="Product Image"
               />
               <div class="card-body">
                 <h5 class="card-title">Rice</h5>
-                <a href="nextpage.html" class="btn btn-primary">Show details</a>
+                <a href="rice.html" class="btn btn-primary">Show details</a>
               </div>
             </div>
           </div>
@@ -114,29 +110,30 @@
               />
               <div class="card-body">
                 <h5 class="card-title">Organic oil</h5>
-                <a href="nextpage.html" class="btn btn-primary">Show details</a>
+                <a href="OrganicOil.html" class="btn btn-primary">Show details</a>
               </div>
             </div>
           </div>
   
-          <!-- Product 4 -->
-          <div class="col-md-4 mb-4">
-            <div class="card text-center">
-              <img
-                src="images/leafs.png"
-                class="card-img-top"
-                alt="Product Image"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Fenugreek Leaf</h5>
-                <a href="nextpage.html" class="btn btn-primary">Show details</a>
-              </div>
-            </div>
-          </div>
   
    
         </div>
       </div>
+   
+      
+        <div class="container mt-5 content-container">
+            <h2 class="slide-in-title">Why Choose Us</h2>
+            <p class="slide-in-text"><b>We Solve Quality Challenges:</b> Our products undergo rigorous quality checks to ensure they meet international standards for purity, taste, and shelf life.</p>
+            <p class="slide-in-text"><b>Transparent Processes for Peace of Mind:</b> From sourcing to delivery, we maintain complete transparency in our operations, giving you confidence in every transaction.</p>
+            <p class="slide-in-text"><b>Reliable Logistics, Every Time:</b> We understand the importance of timely shipments. Our efficient supply chain guarantees competent delivery schedules.</p>
+            <p class="slide-in-text"><b>Comprehensive Product Range:</b> Whether it's premium ripe, bold spices, or versatile dehydrated products, we provide solutions for diverse market needs.</p>
+            <p class="slide-in-text"><b>Certified and Compliant Products:</b> Our exports meet global regulatory requirements including organic certifications, phytosanitary standards, and more.</p>
+            <p class="slide-in-text"><b>Customized Solutions for Your Business:</b> Flexible packaging and tailored product offerings to suit your specific market needs.</p>
+        </div>
+       
+    
+   
+</div>
       <footer>
         <div class="footer-content">
             <div class="logo">
@@ -180,7 +177,7 @@
             © Copyright 2024 woowin. All Rights Reserved. Partnered with world's most trusted B2B platform - Exporters India.
         </div>
     </footer>
-
+<script src="js/product.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

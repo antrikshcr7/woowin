@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #444;
+  line-height: 1.6;
+}
+.video-banner-container {
+  position: relative;
+  width: 100%;
+  height: 80vh; /* Set video container height */
+  overflow: hidden;
+}
+
+.video-banner-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the video covers the entire container */
+}
+
+/* Banner overlay positioned on the left side and vertically centered */
+.banner-overlay {
+  position: absolute;
+  top: 50%; /* Vertical centering */
+  left: 20px; /* Distance from the left side */
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+/* Banner overlay on top */
+.banner-overlay {
+  position: absolute;
+  top: 50%; /* Vertically center from the top */
+  left: -10px; /* Distance from the left side */
+  transform: translateY(-50%); /* Adjust for perfect vertical centering */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  color: #fff;
+  padding: 1rem 2rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 8px; /* Optional: rounded corners */
+}
+
+.image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.text-section {
+  padding-left: 20px;
+}
+
+.text-section h2 {
+  font-weight: bold;
+  color: #222;
+  font-size: 2rem;
+}
+
+.text-section p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.text-section .subheading {
+  color: #28a745; /* Bootstrap's 'success' green color */
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}

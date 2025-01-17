@@ -1,3 +1,6 @@
+html {
+  overflow-x: hidden;
+}
 /* carousel */
 .carousel {
   position: relative;
@@ -667,106 +670,37 @@
 }
 
 /* Base styles for the hero section */
-.hero {
-  display: flex;
-  justify-content: space-between;
-  padding: 50px;
-}
-
-.image-container {
-  flex: 1;
-  max-width: 50%;
-}
-
-.image-container img {
-  width: 100%;
-  /* height: auto; */
+/* Bootstrap adjustments and animations */
+.fade-in-image {
   opacity: 0;
   transform: scale(0.9);
   transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
-.content-container {
-  flex: 1;
-  padding-left: 50px;
-}
-
-.content-container h2 {
-  font-size: 30px;
-  margin-bottom: 100px;
-}
-
-.content-container p {
-  margin-bottom: 15px;
-}
-
-/* Animation styles for h2 (Slide down) */
 .slide-in-title {
   opacity: 0;
   transform: translateY(-50px);
   transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
-/* Animation styles for p (Slide from left) */
 .slide-in-text {
   opacity: 0;
   transform: translateX(-100px);
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
-/* Animation for image (Fade in with zoom) */
-.fade-in-image.visible {
-  opacity: 1;
-  transform: scale(1);
+/* Bootstrap image adjustments */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
 }
 
-/* Class to add when the element is in view */
-.slide-in-title.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
+/* Visibility triggers for animations */
+.fade-in-image.visible,
+.slide-in-title.visible,
 .slide-in-text.visible {
   opacity: 1;
-  transform: translateX(0);
-}
-/* For tablets and smaller screens (max-width: 768px) */
-@media (max-width: 768px) {
-  .hero {
-    flex-direction: column;
-    padding: 30px;
-  }
-
-  .image-container {
-    max-width: 100%; /* Image takes full width */
-    margin-bottom: 30px; /* Add spacing below the image */
-  }
-
-  .content-container {
-    padding-left: 0; /* Remove left padding for smaller screens */
-  }
-
-  .content-container h2 {
-    font-size: 26px;
-    margin-bottom: 50px; /* Reduce spacing for better fit */
-  }
-}
-
-/* For mobile phones (max-width: 480px) */
-@media (max-width: 480px) {
-  .hero {
-    padding: 20px;
-  }
-
-  .content-container h2 {
-    font-size: 22px; /* Smaller font size for titles */
-    margin-bottom: 30px;
-  }
-
-  .content-container p {
-    font-size: 14px; /* Adjust paragraph font size */
-    margin-bottom: 10px;
-  }
+  transform: translateX(0) translateY(0) scale(1);
 }
 
 /* video  */

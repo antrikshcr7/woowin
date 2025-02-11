@@ -1,0 +1,152 @@
+.info-section {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 40px 30px;
+
+  border-radius: 10px;
+}
+
+.info-box {
+  flex: 1 1 50%;
+  background-color: #f9f9f9;
+  padding: 30px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.info-box h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: green;
+}
+
+.info-box p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.map-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.research-section {
+  position: relative;
+  background-image: url("images/reas");
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  padding: 40px 20px;
+  color: white;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.research-content {
+  background-color: rgba(75, 0, 130, 0.85);
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.research-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.research-content p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.explore-link {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.explore-link:hover {
+  color: #ffdd57;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .info-box {
+    flex: 1 1 100%;
+  }
+
+  .info-section {
+    padding: 10px;
+  }
+
+  .research-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .research-content {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .research-content h2 {
+    font-size: 1.3rem;
+  }
+
+  .research-content p {
+    font-size: 0.9rem;
+  }
+
+  .explore-link {
+    font-size: 0.9rem;
+  }
+}
+.left-aligned-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 50vh;
+
+  padding: 20px;
+}
+
+.values-box {
+  background-color: #f39c12; /* Orange color */
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+}
+
+.values-box h2 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+  border-bottom: 1px solid white;
+  padding-bottom: 5px;
+}
+
+.values-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.values-box ul li {
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.values-box ul li::before {
+  content: "✔";
+  color: white;
+  margin-right: 8px;
+}

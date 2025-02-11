@@ -296,15 +296,27 @@ html {
 }
 #prev,
 #next {
-  width: 40px;
-  height: 40px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   font-family: monospace;
-  border: 1px solid #5555;
+  border: none;
   font-size: large;
   bottom: 20%;
   left: 10%;
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
 }
+
+/* Adjust for mobile screens */
+@media (max-width: 768px) {
+  #prev,
+  #next {
+    width: 50px; /* Smaller size for mobile */
+    height: 50px;
+    font-size: medium;
+  }
+}
+
 #next {
   left: unset;
   right: 10%;

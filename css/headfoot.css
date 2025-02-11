@@ -30,35 +30,22 @@ body {
   --item5-zIndex: 7;
   --item5-opacity: 0;
 }
-/* header {
-  width: 1140px;
-  max-width: 90%;
-  display: flex;
-  justify-content: space-between;
-  margin: auto;
-  height: 50px;
-  align-items: center;
-}
-header .logo {
-  font-weight: bold;
-}
-nav {
-  z-index: 2;
-}
-header nav a {
-  margin-left: 30px;
-  text-decoration: none;
-  color: #555;
-  font-weight: 500;
-}
-.logoimg {
-  margin-right: 10px;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 5px;
-  padding-top: 10px;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-} */
+}
+nav.navbar {
+  font-size: 16px; /* Adjust this value as needed */
+}
+
+nav.navbar .nav-link {
+  font-size: 16px; /* Adjust this value as needed */
+}
+
+nav.navbar .navbar-brand {
+  font-size: 18px; /* Adjust this value as needed */
+}
 .container-fluid {
   background-color: white;
 }
@@ -110,10 +97,6 @@ header nav a {
   border-radius: 25px; /* Adjust the value as needed */
   background-color: white;
 }
-/* .offcanvas {
-  border-radius: 25px;
-  background-color: white;
-} */
 
 .navbar-toggler {
   border: none;

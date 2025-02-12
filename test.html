@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>Admin Panel Dashboard</title>
+  <style>
+    .sidebar {
+      height: 100vh;
+      background-color: #f8f9fa;
+    }
+
+    .content {
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="d-flex">
+    <div class="sidebar p-3">
+      <h4>Admin Panel</h4>
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="#home">Home Page</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#products">Products</a>
+        </li>
+      </ul>
+    </div>
+    <div class="content">
+      <div id="home" class="mb-5">
+        <h2>Home Page Image Change</h2>
+        <form id="homeImageForm">
+          <div class="form-group">
+            <label for="homeImage">Upload New Home Page Image</label>
+            <input type="file" class="form-control-file" id="homeImage" accept="image/*" required>
+          </div>
+          <button type="submit" class="btn btn-primary">Change Image</button>
+        </form>
+      </div>
+
+      <div id="products">
+        <h2>Product Management</h2>
+        <form id="addProductForm">
+          <div class="form-group">
+            <label for="productName">Product Name</label>
+            <input type="text" class="form-control" id="productName" required>
+          </div>
+          <div class="form-group">
+            <label for="productDescription">Product Description</label>
+            <textarea class="form-control" id="productDescription" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="productPrice">Product Price</label>
+            <input type="number" class="form-control" id="productPrice" required>
+          </div>
+          <div class="form-group">
+            <label for="productImage">Upload Product Image</label>
+            <input type="file" class="form-control-file" id="productImage" accept="image/*" required>
+          </div>
+          <button type="submit" class="btn btn-success">Add Product</button>
+        </form>
+
+        <div class="mt-4">
+          <h3>Product Details</h3>
+          <div id="productDetails"></div>
+        </div>
+
+        <button class="btn btn-warning mt-3" id="buyNowButton">Buy Now</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // JavaScript to handle form submissions and other interactions
+    document.getElementById('homeImageForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      // Handle home image change logic here
+      alert('Home page image changed!');
+    });
+
+    document.getElementById('addProductForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      // Handle product addition logic here
+      const productName = document.getElementById('productName').value;
+      const productDescription = document.getElementById('productDescription').value;
+      const productPrice = document.getElementById('productPrice').value;
+      const productImage = document.getElementById('productImage').files[0];
+
+      // Display product details (for demo purposes)
+      const productDetails = `
+                <h4>${productName}</h4>
+                <p>${productDescription}</p>
+                <p>Price: $${productPrice}</p>
+                <img src="${URL.createObjectURL(productImage)}" alt="${productName}" style="width: 100px;">
+            `;
+      document.getElementById('productDetails').innerHTML =

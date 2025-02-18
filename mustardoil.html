@@ -9,59 +9,11 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="css/headfoot.css" />
-    <link href="css/oilscss.css" rel="stylesheet">
+    <link href="css/oilscss.css" rel="stylesheet" />
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-md">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
-            <img src="images/woow.jpg" class="nav-logo" alt="Foodify Logo">
-          
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end" id="offcanvasNavbar" tabindex="-1" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="aboutus.html">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="product.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                          Product
-                        </a>
-                        <ul class="dropdown-menu">
-                          <li><a class="dropdown-item" href="product.html">All Product</a></li>
-                          <li><a class="dropdown-item" href="rice.html">Rice</a></li>
-                          <li><a class="dropdown-item" href="OrganicOil.html">Cold Pressed Oil</a></li>
-                          <li><a class="dropdown-item" href="spices.html">Spices</a></li>
-                        </ul>
-                      </li>
-                  <a class="nav-link" href="contact.html">Contact Us</a>
-                </li>
-               
-                <li class="nav-item">
-                  <a class="nav-link" href="blog.html">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="faq.html">FAQ</a>
-                  </li>
-                
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
+    <?php include 'header.html'; ?>
     <div class="container mt-5">
       <h2 class="text-primary">Organic Mustard Oil</h2>
 
@@ -218,51 +170,7 @@
         </div>
       </section>
     </div>
-    <footer>
-      <div class="footer-content">
-        <div class="logo">
-          <img
-            src="images/woow.jpg"
-            alt="Your Logo"
-            style="height: 50px; width: 50px; border-radius: 5px"
-          />
-          <h4>Woowin</h4>
-        </div>
-        <div class="company-info">
-          <h4>Our Company</h4>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-            <li><a href="product.html">Product</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div class="products">
-          <h4>Products</h4>
-          <ul>
-            <li><a href="product.html">All Product</a></li>
-            <li><a href="rice.html">Rice</a></li>
-            <li><a href="OrganicOil.html">Cold Pressed Oil</a></li>
-            <li><a href="spices.html">Spices</a></li>
-          </ul>
-        </div>
-        <div class="contact">
-          <h4>Contact Us</h4>
-          <p><b>ADDRESS</b></p>
-          <p>Hari Mohan Enterprises</p>
-          <p>Ashram Road, Morta City,</p>
-          <p>Rajasthan 341510 INDIA</p>
-          <p><b>CONTACT</b></p>
-          <p>+91-00000-00000</p>
-          <p>info@woowin.com</p>
-        </div>
-      </div>
-      <div class="copyright">
-        <hr />
-        © Copyright 2024 woowin. All Rights Reserved. Partnered with the world's
-        most trusted B2B platform - Exporters India.
-      </div>
-    </footer>
+    <?php include 'footer.html'; ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>

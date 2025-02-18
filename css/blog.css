@@ -104,3 +104,7 @@
   background: #007bff;
   color: #fff;
 }
+.rounded-circle {
+  height: 100px !important;
+  width: 100px !important;
+}

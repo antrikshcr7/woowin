@@ -1,170 +1,128 @@
+<?php
+  include 'header.html';
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Red Chili Product Display</title>
+    <title>Mathania Mirchi Product Display</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="css/headfoot.css" />
-  </head>
-  <style>
+    <style>
       .spices-section {
-    max-width: 100%;
-    text-align: center;
-    padding: 40px;
-    margin: 50px auto;
-    background: #fff;
-    border-radius: 20px;
-    /* box-shadow: 0 10px 30px rgba(0,0,0,0.1); */
-    box-shadow: 5px 5px 10px #b8b8b8ce,-5px -5px 10px #ffffff;
-    position: relative;
-    overflow: hidden;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
-}
+        max-width: 100%;
+        text-align: center;
+        padding: 40px;
+        margin: 50px auto;
+        background: #fff;
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px #b8b8b8ce, -5px -5px 10px #ffffff;
+        position: relative;
+        overflow: hidden;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 1s ease-out, transform 1s ease-out;
+      }
 
-.spices-section.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
+      .spices-section.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
 
-.spices-section h1 {
-    font-size: 2rem;
-    color: #e44d26;
-}
+      .spices-section h1 {
+        font-size: 2rem;
+        color: #e44d26;
+      }
 
-.spices-section p {
-    font-size: 1.2rem;
-    color: #555;
-    margin-bottom: 30px;
-}
+      .spices-section p {
+        font-size: 1.2rem;
+        color: #555;
+        margin-bottom: 30px;
+      }
 
-
-
-.spices-img {
-    position: absolute;
-    top: -50px;
-    right: -50px;
-    width: 300px;
-    opacity: 0.2;
-}
-.highlight-section {
+      .highlight-section {
         background-color: #ffd54f;
         padding: 50px;
         border-radius: 20px;
-        margin:50px auto ;
+        margin: 50px auto;
       }
+
       .btn-custom {
         background-color: #00b894;
         color: white;
         border: none;
       }
+
       .btn-custom:hover {
         background-color: #008e6e;
       }
+
       .image-section img {
-            border-radius: 20px;
-            width: 100%;
-            height: 400px;
-        }
-  </style>
+        border-radius: 20px;
+        width: 100%;
+        height: 400px;
+      }
+    </style>
+  </head>
   <body>
-    <nav class="navbar navbar-expand-md">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-          <img src="images/woow.jpg" class="nav-logo" alt="Foodify Logo">
-        
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="offcanvas offcanvas-end" id="offcanvasNavbar" tabindex="-1" aria-labelledby="offcanvasNavbarLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="aboutus.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                  <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="product.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Product
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="product.html">All Product</a></li>
-                        <li><a class="dropdown-item" href="rice.html">Rice</a></li>
-                        <li><a class="dropdown-item" href="OrganicOil.html">Cold Pressed Oil</a></li>
-                        <li><a class="dropdown-item" href="spices.html">Spices</a></li>
-                      </ul>
-                    </li>
-                <a class="nav-link" href="contact.html">Contact Us</a>
-              </li>
-             
-              <li class="nav-item">
-                <a class="nav-link" href="blog.html">Blog</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="faq.html">FAQ</a>
-                </li>
-              
-            </ul>
-          </div>
-        </div>
-      </div>
-    </nav>
     <div class="container py-5">
       <div class="row align-items-center">
         <div class="col-md-6 mb-4">
-          <img src="images/RedChili.png" alt="Red Chili" class="img-fluid rounded" />
+          <img
+            src="images/RedChili.png"
+            alt="Mathania Mirchi"
+            class="img-fluid rounded"
+          />
         </div>
         <div class="col-md-6">
-          <h1 class="text-primary">Red Chili Whole & Powder</h1>
+          <h1 class="text-primary">Mathania Red chili – Whole & Powdered</h1>
           <p>
-            <strong>Bold Flavor:</strong> Intense heat with a distinct flavor
-            profile.
+            Mathania Mirchi, named after the Mathania region in Jodhpur,
+            Rajasthan, is known for its deep red color, moderate spiciness, and
+            unique flavor, making it a sought-after ingredient in Rajasthani
+            cuisine.
           </p>
-          <p><strong>Colorful:</strong> Adds a vibrant red color to dishes.</p>
-          <p>
-            <strong>Whole and Powdered:</strong> Available in both forms for
-            versatile use.
-          </p>
-          <p>
-            <strong>Sourced from India:</strong> Known for producing the highest
-            quality chilies.
-          </p>
-          <p>
-            <strong>Export-Ready:</strong> Tailored to meet the demands of
-            global importers.
-          </p>
-          <p>
-            <strong>Forms Available:</strong> Whole dried chilies and powdered
-            form.
-          </p>
-          <p>
-            <strong>Packaging:</strong> 10kg, 25kg, 50kg polypropylene or jute
-            bags with liners.
-          </p>
-          <p>
-            <strong>Quality Standards:</strong> Pungency measured in Scoville
-            Heat Units (SHU); aflatoxin-free.
-          </p>
-          <p>
-            <strong>Shelf Life:</strong> Whole: 18 months; Powder: 12 months.
-          </p>
-          <p>
-            <strong>Applications:</strong> Flavoring, coloring, and heat
-            enhancement in dishes and sauces.
-          </p>
+          <h2>Geographical Identification (GI) of Mathania Mirchi:</h2>
+          <ul>
+            <li>
+              <strong>Region:</strong> Grown primarily in Mathania and
+              surrounding areas in Jodhpur district, Rajasthan.
+            </li>
+            <li>
+              <strong>Climate & Soil:</strong> The arid climate and sandy soil
+              of Rajasthan contribute to its distinctive flavor and deep red
+              hue.
+            </li>
+            <li>
+              <strong>Taste & Aroma:</strong> Unlike extremely spicy chilies,
+              Mathania Mirchi offers a balanced heat with rich flavor, making it
+              ideal for traditional curries and Rajasthani dishes.
+            </li>
+            <li>
+              <strong>Traditional Cultivation:</strong> Farmers in Mathania have
+              been growing this chili for generations, using traditional methods
+              that enhance its unique characteristics.
+            </li>
+            <li>
+              <strong>GI Tag Status:</strong> Efforts are underway to obtain a
+              Geographical Indication (GI) Tag to protect its authenticity and
+              increase market value.
+            </li>
+          </ul>
+          <h2>Why is a GI Tag Important?</h2>
+          <ul>
+            <li>
+              Protects the authenticity and prevents counterfeit production.
+            </li>
+            <li>Increases the economic value and international recognition.</li>
+            <li>
+              Benefits local farmers by ensuring fair pricing and branding.
+            </li>
+          </ul>
           <button class="btn btn-success" onclick="getQuote()">
             QUOTE NOW
           </button>
@@ -172,73 +130,30 @@
       </div>
     </div>
     <section class="container highlight-section">
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <h6><strong> Get To Us Know  </strong></h6>
-            <h1>Partner with Excellence Agricultural Trade</h1>
-            <p>
-              Ready to source premium-quality spices, rice, and agricultural
-              products? Join hands with Woowin for trusted global trade.
-              Experience unmatched quality, competitive pricing, and seamless
-              logistics tailored to your needs. Contact us today to elevate your
-              supply chain with reliable partnerships!
-            </p>
-            <button class="btn btn-custom">GET APPOINTMENT</button>
-            <p class="mt-3"><strong>Make A Call:</strong> +91-80585-61112</p>
-          </div>
-          <div class="col-md-6 image-section">
-            <img
-              src="images/"
-              alt=" Image"
-              class="img-fluid"
-            />
-          </div>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h6><strong> Get To Know Us </strong></h6>
+          <h1>Partner with Excellence in Agricultural Trade</h1>
+          <p>
+            Ready to source premium-quality spices, rice, and agricultural
+            products? Join hands with Woowin for trusted global trade.
+            Experience unmatched quality, competitive pricing, and seamless
+            logistics tailored to your needs. Contact us today to elevate your
+            supply chain with reliable partnerships!
+          </p>
+          <button class="btn btn-custom">GET APPOINTMENT</button>
+          <p class="mt-3"><strong>Make A Call:</strong> +91-80585-61112</p>
         </div>
-      </section>
-    <footer>
-        <div class="footer-content">
-            <div class="logo">
-                <img src="images/woow.jpg" alt="Your Logo" style="height: 50px; width: 50px; border-radius: 5px;"><h4> Woow in</h4>
-            </div>
-            <div class="company-info">
-                <h4>Our Company</h4>
-                <ul>
-                    <li><img src="gif/home.gif" alt="homegif" style="height: 24px; width: 24px; border-radius:5px; margin-right: 5px; opacity: 90%;"><a href="index.html">Home</a></li>
-                    <li><img src="gif/info.gif" alt="infogif" style="height: 24px; width: 24px; border-radius:5px; margin-right: 5px; opacity: 90%;"><a href="aboutus.html">About Us</a></li>
-                    <li><img src="gif/organic-product.gif" alt="homegif" style="height: 24px; width: 24px; border-radius:5px; margin-right: 5px; opacity: 90%;"><a href="product.html">Product</a></li>
-                    <li><img src="gif/phone-contact.gif" alt="homegif" style="height: 24px; width: 24px; border-radius:5px; margin-right: 5px; opacity: 90%;"><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="products">
-                <h4>Products</h4>
-                <ul>
-                    <li><a href="product.html">All Product</a></li>
-                    <li><a href="rice.html">Rice</a></li>
-                    <li><a href="spices.html">Spices</a></li>
-                    <li><a href="FenugreekLeaf.html">Fenugreek Leaf</a></li>
-                    <li><a href="OrganicOil.html">Cold Pressed Oil</a></li>
-                </ul>
-            </div>
-            <div class="contact">
-                <h4>Contact Us</h4>
-                <p><strong>ADDRESS</strong></p>
-                <p>Hari Mohan Enterprises</p>
-                <p>Behind Yadav Hospital, Murli</p>
-                <p>Ashram Road, Morta City,</p>
-                <p>Rajasthan 341510 INDIA</p>
-                <p><strong>CONTACT</strong></p>
-                <p>+91 - 73398-24365</p>
-                <p>+91-00000-00000</p>
-                <p>info@woowin.com</p>
-                <p>purchase@woow.com</p>
-                <p>sales@woow.com</p>
-            </div>
+        <div class="col-md-6 image-section">
+          <img
+            src="images/RedChili.png"
+            alt="Mathania Mirchi"
+            class="img-fluid"
+          />
         </div>
-        <div class="copyright">
-            <hr></hr>
-            © Copyright 2024 woowin. All Rights Reserved. Partnered with world's most trusted B2B platform - Exporters India.
-        </div>
-    </footer>
+      </div>
+    </section>
+    <?php include 'footer.html'; ?>
 
     <script>
       function getQuote() {

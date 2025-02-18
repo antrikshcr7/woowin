@@ -58,7 +58,7 @@
 .card-img-top {
   object-fit: cover; /* Ensures the entire image fits within the box without cropping */
   width: 100%; /* Full width for consistency */
-  height: 300px; /* Fixed height to keep card sizes uniform */
+  height: 360px; /* Fixed height to keep card sizes uniform */
   /* Optional: Light background to fill any empty space */
 }
 .card {

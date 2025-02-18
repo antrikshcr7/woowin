@@ -1,6 +1,9 @@
 html {
   overflow-x: hidden;
 }
+body {
+  overflow-x: hidden;
+}
 /* carousel */
 .carousel {
   position: relative;
@@ -715,45 +718,54 @@ html {
   transform: translateX(0) translateY(0) scale(1);
 }
 
-/* video  */
 .video-banner-container {
   position: relative;
   width: 100%;
-  height: 80vh; /* Set video container height */
+  height: 95vh; /* Adjusted for better visibility */
   overflow: hidden;
 }
 
 .video-banner-container video {
   width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensure the video covers the entire container */
+  height: auto; /* Maintain aspect ratio */
+  min-height: 100%;
+  object-fit: cover; /* Prevent cropping */
 }
 
-/* Banner overlay positioned on the left side and vertically centered */
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .video-banner-container {
+    height: 50vh; /* Reduce height for better layout */
+  }
+  .video-banner-container video {
+    height: auto;
+    width: 100%;
+    object-fit: cover; /* Ensure full video visibility */
+  }
+}
+
+/* Banner overlay styling */
 .banner-overlay {
   position: absolute;
-  top: 50%; /* Vertical centering */
-  left: 20px; /* Distance from the left side */
-  transform: translateY(-50%);
+  top: 50%;
+
+  transform: translateY(-50%); /* Maintain vertical centering */
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
-  padding: 1rem 2rem;
-  font-size: 2rem;
+  padding: 0.5rem 1rem; /* Minimized padding */
+  font-size: 1.5rem; /* Reduced font size */
   font-weight: bold;
   border-radius: 8px;
 }
 
-/* Banner overlay on top */
-.banner-overlay {
-  position: absolute;
-  top: 50%; /* Vertically center from the top */
-  left: -10px; /* Distance from the left side */
-  transform: translateY(-50%); /* Adjust for perfect vertical centering */
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-  color: #fff;
-  padding: 1rem 2rem;
-  text-align: center;
-  font-size: 2rem;
-  font-weight: bold;
-  border-radius: 8px; /* Optional: rounded corners */
+/* Mobile view: Minimize banner overlay size */
+@media (max-width: 768px) {
+  .banner-overlay {
+    font-size: 1.2rem; /* Slightly smaller text */
+    padding: 0.4rem 0.8rem; /* Reduce padding */
+  }
+}
+.rounded-circle {
+  height: 100px !important;
+  width: 100px !important;
 }
